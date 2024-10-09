@@ -1,0 +1,100 @@
+@import "./variables.scss";
+@import "./breakpoints.scss";
+
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("../../public/assets/login2.jpg") center;
+  background-size: cover;
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased gap for more spacing */
+    width: 50%; /* Increased width */
+    padding: 50px; /* Increased padding for more space */
+    background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+    border-radius: 20px;
+    backdrop-filter: blur(10px); /* Adds the blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+
+    @include lg {
+      width: 70%; /* Adjust width for large screens */
+    }
+
+    @include mm {
+      width: 90%; /* Adjust width for medium screens */
+    }
+
+    &_form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px; /* Increased gap between elements */
+
+      input {
+        width: 100%;
+        padding: 10px 20px; /* Increased padding for input */
+        font-size: 18px; /* Increased font size */
+        background-color: rgba(255, 255, 255, 0.1) !important; /* Translucent input background */
+        border: none;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.3); /* Thicker border */
+        outline: none;
+        text-align: center;
+        color: white;
+        transition: background-color 0.3s ease, border-bottom-color 0.3s ease;
+
+        &:focus {
+          background-color: rgba(255, 255, 255, 0.2) !important; /* Ensure background remains translucent on focus */
+          border-bottom: 2px solid rgba(255, 255, 255, 0.6); /* Slightly more visible border on focus */
+        }
+
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.7); /* Slightly more visible placeholder text */
+        }
+      }
+
+      button {
+        margin-top: 20px; /* Increased margin for spacing */
+        padding: 12px 0; /* Increased padding for button */
+        font-size: 18px; /* Increased font size */
+        width: 60%; /* Increased button width */
+        
+        @include buttonStyle;
+
+        &:hover {
+          box-shadow: 0 0 10px 3px rgba(255, 255, 255);
+        }
+      }
+    }
+
+    &_google {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 25px; /* Increased margin */
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px; /* Increased font size */
+      font-weight: 600;
+      text-align: center;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      color: white;
+      font-size: 16px; /* Increased font size */
+      text-align: center;
+    }
+  }
+}

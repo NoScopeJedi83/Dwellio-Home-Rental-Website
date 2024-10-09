@@ -1,0 +1,100 @@
+@import "./variables.scss";
+@import "./breakpoints.scss";
+
+.register {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("../../public/assets/register2.jpg") center;
+  background-size: cover;
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased gap for more spacing */
+    width: 50%; /* Increased width */
+    padding: 50px; /* Increased padding for more space */
+    background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+    border-radius: 20px;
+    backdrop-filter: blur(10px); /* Adds the blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+
+    @include lg {
+      width: 70%; /* Adjust width for large screens */
+    }
+
+    @include mm {
+      width: 90%; /* Adjust width for medium screens */
+    }
+
+    &_form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px; /* Increased gap between elements */
+
+      input {
+        width: 100%;
+        padding: 10px 20px; /* Increased padding for input */
+        font-size: 18px; /* Increased font size */
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.3); /* Thicker border */
+        outline: none;
+        text-align: center;
+        color: white;
+
+        &:focus {
+          background: transparent;
+        }
+
+        &::placeholder {
+          color: white;
+        }
+      }
+
+      label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px; /* Increased gap for more spacing */
+        cursor: pointer;
+        color: white;
+        font-size: 16px; /* Increased font size */
+
+        img {
+          width: 30px; /* Increased image size */
+        }
+      }
+
+      button {
+        margin-top: 20px; /* Increased margin for spacing */
+        padding: 12px 0; /* Increased padding for button */
+        font-size: 18px; /* Increased font size */
+        width: 60%; /* Increased button width */
+        
+        @include buttonStyle;
+
+        &:hover {
+          box-shadow: 0 0 10px 3px rgba(255, 255, 255);
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px; /* Increased font size */
+      margin-top: 15px; /* Increased margin */
+      text-align: center;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
