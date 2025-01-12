@@ -132,7 +132,7 @@ Note: If you only want to test the website then use first step only i.e 'For dem
     <tr>Authentication</tr>
     <tr>
         <td><img src="client/public/assets/signup.png" /> </td>
-        <td><img src="client/public/assets/Singin.png" /></td>
+        <td><img src="client/public/assets/Signin.png" /></td>
     </tr>
 </table>
 <table>
