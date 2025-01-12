@@ -68,8 +68,9 @@ Note: If you only want to test the website then use first step only i.e 'For dem
     - **Add JWT Token**:
         - Add JWT token as, 
         ```
-            JWT_SECRET = "PASSWORDSECRET"
+            JWT_SECRET = "***********"
         ```
+        - Since this website is linked with my personal MongoDB cluster, the JWT token can be obtained by mailing me at atharvgro2003@gmail.com and mentioning the same and the need for the token (for security purposes).
 
     - **Guest user credentials**
 
