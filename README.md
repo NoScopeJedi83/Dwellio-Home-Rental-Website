@@ -138,21 +138,24 @@ Note: If you only want to test the website then use first step only i.e 'For dem
 <table>
     <tr>Dashboard</tr>
     <tr>
-        <td><img src="assets/dashboard.png" /> </td>
-        <td><img src="assets/history.png" /></td>
+        <td><img src="client/public/assets/Dashboard1.png" /> </td>
+        <td><img src="client/public/assets/Dashboard2.png" /></td>
+        <td><img src="client/public/assets/Dashboard3.png" /></td>
     </tr>
 </table>
 <table>
-    <tr>Assessment</tr>
+    <tr>Wish List page</tr>
     <tr>
-        <td><img src="assets/assessment.png" /> </td>
+        <td><img src="client/public/assets/Wish List.png" /></td>
     </tr>
 </table>
 <table>
-    <tr>Report</tr>
+    <tr>Create Listing Page</tr>
     <tr>
-        <td><img src="assets/report1.png" /> </td>
-        <td><img src="assets/report2.png" /></td>
-        <td><img src="assets/report3.png" /></td>
+        <td><img src="client/public/assets/Create Listing 1.png" /></td>
+        <td><img src="client/public/assets/Create Listing 2.png" /></td>
+        <td><img src="client/public/assets/Create Listing 3.png" /></td>
+        <td><img src="client/public/assets/Create Listing 4.png" /></td>
+        <td><img src="client/public/assets/Create Listing 5.png" /></td>
     </tr>
 </table>
