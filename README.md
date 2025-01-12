@@ -131,9 +131,8 @@ Note: If you only want to test the website then use first step only i.e 'For dem
 <table>
     <tr>Authentication</tr>
     <tr>
-        <td><img src="assets/Register.png" /> </td>
-        <td><img src="assets/Signin.png" /></td>
-        <td><img src="assets/Forgot.png" /></td>
+        <td><img src="client/public/assets/signup.png" /> </td>
+        <td><img src="client/public/assets/Singin.png" /></td>
     </tr>
 </table>
 <table>
